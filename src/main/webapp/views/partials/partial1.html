@@ -1,0 +1,19 @@
+<div class="starter-template">
+    <h1>Game started</h1>
+    <p class="lead">
+    <div>
+        {{word.def}} ?
+
+
+    </div> <br/>
+
+    <div>
+        <form>
+            <label data-ng-repeat="choice in question.choices">
+                <input type="radio" ng-click="correctAnswer(choice)" name="response" data-ng-model="choice" />
+                {{choice.text}}
+            </label> 
+        </form>
+    </div>
+</p>
+</div>
